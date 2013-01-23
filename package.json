@@ -1,0 +1,33 @@
+{
+  "name": "ow2-status",
+  "version": "0.0.1",
+  "description": "OW2 Monitoring",
+  "author": "Christophe Hamerling <chamerling@ow2.org>",
+  "homepage": "http://github.com/ow2/ow2-status",
+  "keywords": [
+    "node"
+  ],
+  "maintainers": [{
+    "name": "Christophe Hamerling",
+    "email": "chamerling@ow2.org"
+  }],
+  "contributors": [],
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://mths.be/mit"
+  }],
+  "bugs": {
+    "url": "https://github.com/ow2/ow2-status/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ow2/ow2-status.git"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.0.x"
+  },
+  "dependencies": {
+    "statusdashboard" : "latest"
+  }
+}

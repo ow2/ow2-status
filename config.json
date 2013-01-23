@@ -1,0 +1,82 @@
+{
+  "title": "OW2 Platform Status",
+  "hostname": "0.0.0.0",
+  "port": 8080,
+  "client": {
+    "transports": []
+  },
+  "services": [
+    {
+      "name": "OW2.org", 
+      "label": "OW2.org",
+      "check": "http",
+      "host": "ow2.org", 
+      "port": 80,
+      "path": "/"
+    },
+    {
+      "name": "Jira", 
+      "label": "Jira",
+      "check": "http",
+      "host": "jira.ow2.org", 
+      "port": 80,
+      "path": "/secure/Dashboard.jspa"
+    },
+    {
+      "name": "Bamboo", 
+      "label": "Bamboo",
+      "check": "http",
+      "host": "bamboo.ow2.org", 
+      "port": 80,
+      "path": "/allPlans.action"
+    },
+    {
+      "name": "Fisheye", 
+      "label": "Fisheye",
+      "check": "http",
+      "host": "fisheye.ow2.org", 
+      "port": 80,
+      "path": "/"
+    },
+    {
+      "name": "Forge", 
+      "label": "Forge",
+      "check": "http",
+      "host": "forge.ow2.org", 
+      "port": 80,
+      "path": "/"
+    },
+    {
+      "name": "Gitorious", 
+      "label": "Gitorious",
+      "check": "http",
+      "host": "gitorious.ow2.org", 
+      "port": 80,
+      "path": "/"
+    },
+    {
+      "name": "Nexus", 
+      "label": "Nexus",
+      "check": "http",
+      "host": "repository.ow2.org", 
+      "port": 80,
+      "path": "/nexus/index.html"
+    }
+  ],
+  "plugins" : {
+    "console" : {
+      "enable": false
+    },
+    "irc" : {
+      "enable": true,
+      "server": "irc.freenode.net",
+      "nick": "ow2statusbot",
+      "options": {
+        "debug": false,
+        "channels": ["#ow2status"]
+      }
+    }
+  },
+  "serviceInterval": 20000,
+  "serviceDelay": 500
+}
