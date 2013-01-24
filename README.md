@@ -1,6 +1,12 @@
 # OW2-Status
 
-OW2 Status embeds [statusdashboard](https://github.com/obazoud/statusdashboard) to provide technical level monitoring of the OW2 platform. 
+OW2 Status embeds [statusdashboard](https://github.com/obazoud/statusdashboard) to provide technical level monitoring of the OW2 platform.
+
+## Notes
+
+The application is deployed on Heroku at http://ow2status.herokuapp.com and periodically pings OW2 services. In order to keep it alive, the application also pings itself with the statusdashboard heartbeat plugin. When deploying for the first time, the HEARTBEAT_URL must be set like
+
+    heroku config:add HEARTBEAT_URL=http://ow2status.herokuapp.com
 
 ## License
 
