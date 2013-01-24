@@ -30,4 +30,6 @@ var dashboard = new server.dashboard(settings, function() {
   console.log(settings)
 });
 */
-var dashboard = new server.dashboard(settings);
+var dashboard = new server.dashboard(settings, function() {
+  console.log('Server has been started');
+});

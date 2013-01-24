@@ -75,6 +75,10 @@
         "debug": false,
         "channels": ["#ow2status"]
       }
+    },
+    "heartbeat": {
+      "enable": true,
+      "period": 20000
     }
   },
   "serviceInterval": 20000,
